@@ -1,140 +1,127 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>國家公園介紹網</title>
-
-<style type='text/css'>
-*{
-    margin:0;
-    padding:0;
-    list-style: none;
-}
-body{
-    width: 1024px;
-    height: 768px;
-    margin: auto;
-    border: 1px solid #222222;
-}
-.banner{
-    display: flex;
-    justify-content: center;
-    width: 1024px;
-    height: 65px;
-    box-sizing: border-box;
-    background-color: #0000ff; 
-    border-bottom: 1px solid #222;
-}
-.maincontent{
-    display: flex;
-    width: 100%;
-    height: 683px;
-    box-sizing: border-box;
-}
-.menu{
-    width: 200px;
-    height: 683px;
-    background-color: #0ff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    border-right: 1px solid#222;  
-}
-.pic{
-    position: relative;
-    margin: 20px 0;
-}
-.pic img{
-    width: 120px;
-    height: 40px;
-    vertical-align: middle;
-}
-.pic .hover{
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    opacity: 0;
-}
-.pic:hover .hover{
-    opacity: 1;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-}
-marquee{
-    width: 824px;
-    height: 29px;
-    line-height: 29px;
-    border-bottom: 1px solid #000;
-}
-.content{
-    display: flex;
-    justify-content: center;
-}
-iframe{
-    width: 100%;
-    height: 654px;
-    overflow: hidden;
-}
-.footer{
-    box-sizing: border-box;
-    width: 1024px;
-    height: 20px;
-    border-top: 1px solid#222;
-}
-.footer p{
-    display: flex;
-    justify-content: center;
-    font-family: "標楷體";
-    font-size: 16px;
-    font-weight: medium;
-    line-height: 18px;
-}
-</style>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            /* box-sizing: border-box; */
+        }
+        body{
+            width: 1024px;
+            height: 768px;
+            margin: auto;
+            border: 1px solid #000;
+        }
+        .banner{
+            display: flex;
+            justify-content: center;
+            width: 1024px;
+            height: 65px;
+            background: #00f;
+        }
+        .banner img{
+            width: 65px;
+            height: 65px;
+        }
+        .content{
+            display: flex;
+            height: 683px;
+            border-top: 1px solid #000;
+        }
+        .menu{
+            width: 200px;
+            height: 683px;
+            background:#0ff;
+            border-right: 1px solid#222; 
+            text-align: center;
+        }
+        .pic{
+            position: relative;
+            margin: 40px 0;
+        }
+        .yms{
+            margin-top: 20px;
+        }
+        .pic .hover{
+            position: absolute;
+            top: 0;
+            left: 40px;
+            opacity: 0;
+        }
+        .pic:hover .hover{
+            opacity: 1;
+        }
+        img{
+            width: 120px;
+            height: 40px;
+        }
+        .frame{
+            width: 824px;
+            height: 683px;
+        }
+        marquee{
+            width: 100%;
+            height: 29px;
+            line-height: 29px;
+            border-bottom: 1px solid #000;
+            vertical-align: top;
+        }
+        iframe{
+            width: 100%;
+            height: 654px;
+            overflow: hidden;       
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            width: 1024px;
+            height: 20px;
+            font-family: "標楷體";
+            font-size: 16px;
+            font-weight: medium;
+            line-height: 18px;
+            border-top: 1px solid #000;
+        }
+    </style>
 </head>
 <body>
     <div class="banner">
-        <a href="index.html" target="_top"><img src="images/00.gif" alt="logopic"></a>  
+        <a href="index1.html" target="_top"><img src="images/00.gif" alt="logopic"></a>
     </div>
-    <div class="maincontent">
-    <div class="menu">
-        <div class="pic tms">
+    <div class="content">
+        <div class="menu">
+        <div class="pic yms">
             <img class="show" src="images/park0302.jpg" >
-            <a href="park/yanmingshan.html" target="imain"><img class="hover" src="images/park0302a.jpg" alt="" ></a>
+            <a href="park/yanmingshan1.html" target="imain"><img class="hover" src="images/park0302a.jpg" alt="陽明山國家公園" ></a>
         </div>
-        <div class="pic snow">
-            <img class="show" src="images/park0303.jpg" alt="">
-            <a href="park/sheipa.html" target="imain"><img class="hover" src="images/park0303a.jpg" alt=""></a>
+        <div class="pic spa">
+                <img class="show" src="images/park0303.jpg" >
+                <a href="park/sheipa1.html" target="imain"><img class="hover" src="images/park0303a.jpg" alt="雪霸國家公園"></a>
         </div>
-        <div class="pic tnp">
-            <img class="show" src="images/park0304.jpg" alt="">
-            <a href="#"><img class="hover" src="images/park0304a.jpg" alt=""></a>
+            <div class="pic tlg">
+                <img class="show" src="images/park0304.jpg" >
+                <a href="park/yanmingshan.html" target="imain"><img class="hover" src="images/park0304a.jpg" alt="太魯閣國家公園"></a>
+            </div>
+            <div class="pic us">
+                <img class="show" src="images/park0305.jpg" >
+                <a href="park/yanmingshan.html" target="imain"><img class="hover" src="images/park0305a.jpg" alt="玉山國家公園"></a>
+            </div>
+            <div class="pic us">
+                <a href="others/park.mp3">檔案下載</a>
+            </div>
         </div>
-        <div class="pic ynp">
-            <img class="show" src="images/park0305.jpg" alt="">
-            <a href="#"><img class="hover" src="images/park0305a.jpg" alt=""></a>
-        </div>
-        <div class="pic downlord">
-            <a href="others/park.mp3">檔案下載</a>
+        <div class="frame">
+            <marquee>歡迎進入國家公園介紹網，本網站有詳細的國家公園介紹哦！</marquee>
+            <iframe src="main.html" name="imain" frameborder="0"></iframe>
         </div>
     </div>
-    <div class="container">
-    <marquee>歡迎進入國家公園介紹網，本網站有詳細的國家公園介紹哦！</marquee>
-        <div class="content">
-    <iframe src="others/main.html"name="imain" frameborder="0"></iframe>
-        </div>
-</div>
-</div>
-
     <div class="footer">
-        <p>網頁設計及維護 01KYO、最近更新日期:2020/08/02</p>
+        <p>網頁設計及維護：21Yuan、最近更新日期：2020/10/05</p>
     </div>
-    
-    
-    
 </body>
 </html>
